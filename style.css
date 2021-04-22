@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 3rem;
+  background: linear-gradient(328deg, #20ddc2, #242288);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  margin: 3rem;
+  height: 15%;
+  width: 15%;
+  border: 7px #242288 solid;
+  border-radius: 50%;
+}
+
+p {
+  margin: 1rem;
+}
+
+span {
+  color: #1f1f83;
+  font-weight: bolder;
+}
+
+button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #1f1f83;
+  background-color: rgba(70, 85, 100, 0.2);
+  outline: none;
+  padding: 1.5rem 5rem;
+  box-shadow: 0.1rem 0.1rem #407e85;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+button:active {
+  transform: translate(0, 0.5rem);
+  box-shadow: none;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 1.75rem;
+  }
+
+  img {
+    border: 3px #242288 solid;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  img {
+    border: 3px #242288 solid;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
